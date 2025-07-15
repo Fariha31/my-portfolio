@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Fariha Liaqat - Frontend Developer Portfolio",
   description:
-    "Fariha Liaqat - Professional Frontend Developer with 3+ years of experience in React, Vue.js, and modern web technologies.",
+    "Fariha Liaqat - Professional Frontend Developer with 3+ years of experience in React, Vue.js, and modern web technologies. Dark theme portfolio showcasing projects and skills.",
     generator: 'v0.dev'
 }
 
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true} disableTransitionOnChange>
           {children}
         </ThemeProvider>
       </body>

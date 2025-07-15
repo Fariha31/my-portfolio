@@ -44,6 +44,14 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Custom theme colors
+        "primary-light-bg": "hsl(var(--primary-light-bg))",
+        "secondary-light-bg": "hsl(var(--secondary-light-bg))",
+        "primary-dark-bg": "hsl(var(--primary-dark-bg))",
+        "secondary-dark-bg": "hsl(var(--secondary-dark-bg))",
+        "accent-blue": "#007bff", // Vibrant Blue
+        "accent-green": "#28a745", // Vibrant Green
+        "accent-orange": "#fd7e14", // Vibrant Orange
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -51,40 +59,14 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       animation: {
-        "gradient-x": "gradient-x 15s ease infinite",
-        "gradient-y": "gradient-y 15s ease infinite",
-        "gradient-xy": "gradient-xy 15s ease infinite",
+        "background-gradient": "background-gradient 10s ease infinite",
+        "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
       keyframes: {
-        "gradient-y": {
-          "0%, 100%": {
-            transform: "translateY(-50%)",
-          },
-          "50%": {
-            transform: "translateY(50%)",
-          },
-        },
-        "gradient-x": {
-          "0%, 100%": {
-            transform: "translateX(-50%)",
-          },
-          "50%": {
-            transform: "translateX(50%)",
-          },
-        },
-        "gradient-xy": {
-          "0%, 100%": {
-            transform: "translate(-50%, -50%)",
-          },
-          "25%": {
-            transform: "translate(50%, -50%)",
-          },
-          "50%": {
-            transform: "translate(50%, 50%)",
-          },
-          "75%": {
-            transform: "translate(-50%, 50%)",
-          },
+        "background-gradient": {
+          "0%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+          "100%": { backgroundPosition: "0% 50%" },
         },
       },
     },

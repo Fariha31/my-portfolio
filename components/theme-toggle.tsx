@@ -28,7 +28,7 @@ export function ThemeToggle() {
       variant="ghost"
       size="sm"
       onClick={() => setTheme(isDark ? "light" : "dark")}
-      className="relative overflow-hidden w-9 h-9 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+      className="relative overflow-hidden w-9 h-9 hover:bg-secondary transition-colors"
       aria-label="Toggle theme"
     >
       <Sun className={`h-5 w-5 transition-all duration-300 ${isDark ? "rotate-90 scale-0" : "rotate-0 scale-100"}`} />
@@ -38,3 +38,5 @@ export function ThemeToggle() {
     </Button>
   )
 }
+
+export default ThemeToggle
