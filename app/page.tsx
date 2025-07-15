@@ -155,7 +155,7 @@ const achievements = [
     title: "Agile Workflow & Milestones",
     description:
       "Consistently met project milestones and deadlines by actively engaging in Agile development frameworks.",
-    metric: "On-time", // Qualitative metric
+    metric: "100%", // Changed from "On-time" to "100%"
     color: "from-accent-green to-accent-orange",
   },
 ]

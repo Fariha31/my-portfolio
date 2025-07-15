@@ -6,23 +6,27 @@ export function AboutSection() {
   const highlights = [
     {
       icon: Code,
-      title: "Clean Code",
-      description: "Writing maintainable, scalable code following best practices",
+      title: "Crafting Robust Code",
+      description:
+        "Building maintainable and scalable solutions with a focus on code quality and best practices, ensuring long-term stability.",
     },
     {
       icon: Palette,
-      title: "UI/UX Focus",
-      description: "Creating beautiful, intuitive user interfaces",
+      title: "Intuitive User Experiences",
+      description:
+        "Designing and implementing visually appealing interfaces that prioritize user delight and accessibility across devices.",
     },
     {
       icon: Zap,
-      title: "Performance",
-      description: "Optimizing applications for speed and efficiency",
+      title: "Optimized Performance",
+      description:
+        "Delivering fast, responsive applications by optimizing load times and overall site speed for a seamless user journey.",
     },
     {
       icon: Users,
-      title: "Collaboration",
-      description: "Working effectively in agile development teams",
+      title: "Collaborative Development",
+      description:
+        "Seamlessly integrating with cross-functional teams in agile environments to drive project success and foster innovation.",
     },
   ]
 
@@ -35,10 +39,11 @@ export function AboutSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">About Me</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">A Passion for Frontend Excellence</h2>
           <p className="text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate frontend developer who loves creating digital experiences that make a difference. With a
-            strong foundation in modern web technologies, I bring ideas to life through clean, efficient code.
+            My journey as a Frontend Engineer is driven by a deep passion for transforming complex ideas into elegant,
+            user-centric web applications. With every project, I am committed to delivering not just functional code,
+            but exceptional digital experiences that are intuitive, high-performing, and built to last.
           </p>
         </motion.div>
 

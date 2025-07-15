@@ -50,7 +50,7 @@ const HeroSection = () => {
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="text-2xl font-bold bg-gradient-to-r from-accent-blue to-accent-green bg-clip-text text-transparent"
+              className="text-2xl font-bold bg-gradient-to-r from-accent-blue to-accent-green bg-clip-text text-transparent cursor-pointer hover:scale-105 transition-transform duration-300"
             >
               FL
             </motion.div>
@@ -121,9 +121,21 @@ const HeroSection = () => {
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="md:hidden fixed inset-x-0 top-16 bottom-0 bg-background/95 backdrop-blur-md border-t border-border py-4 overflow-y-auto z-40"
+              className="md:hidden fixed inset-0 h-screen w-screen bg-background/95 backdrop-blur-md overflow-y-auto z-40"
             >
-              <div className="flex flex-col space-y-4">
+              <div className="flex flex-col space-y-4 pt-16">
+                {/* Explicit Close Button for Mobile Menu */}
+                <div className="absolute top-4 right-4">
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-foreground/80"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    <X className="w-6 h-6" />
+                  </Button>
+                </div>
+
                 {navItems.map((item) => (
                   <button
                     key={item}
@@ -134,7 +146,12 @@ const HeroSection = () => {
                   </button>
                 ))}
                 <div className="flex items-center space-x-4 px-4 pt-4 border-t border-border">
-                  <Button variant="ghost" size="sm" className="text-foreground/80 hover:text-accent-blue">
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-foreground/80 hover:text-accent-blue"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
                     <a
                       href="https://github.com/Fariha31"
                       target="_blank"
@@ -144,7 +161,12 @@ const HeroSection = () => {
                       <Github className="w-5 h-5" />
                     </a>
                   </Button>
-                  <Button variant="ghost" size="sm" className="text-foreground/80 hover:text-accent-blue">
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-foreground/80 hover:text-accent-blue"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
                     <a
                       href="https://www.linkedin.com/in/fariha-liaqat-998054193/"
                       target="_blank"
@@ -158,6 +180,7 @@ const HeroSection = () => {
                     variant="outline"
                     size="sm"
                     className="border-accent-blue text-accent-blue hover:bg-accent-blue hover:text-white bg-transparent"
+                    onClick={() => setIsMobileMenuOpen(false)}
                   >
                     <Download className="w-4 h-4 mr-2" />
                     Resume
@@ -217,8 +240,9 @@ const HeroSection = () => {
                 transition={{ delay: 0.6 }}
                 className="text-lg text-foreground/70 max-w-lg mx-auto lg:mx-0 leading-relaxed"
               >
-                Passionate frontend developer with 3+ years of experience crafting beautiful, responsive web
-                applications using modern technologies and best practices.
+                Experienced Frontend Engineer with 3+ years of expertise, dedicated to building high-quality, responsive
+                web applications and collaborating effectively with cross-functional teams to deliver impactful digital
+                solutions.
               </motion.p>
 
               <motion.div
