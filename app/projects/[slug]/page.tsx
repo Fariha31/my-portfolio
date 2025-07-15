@@ -88,10 +88,24 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                 {/* Desktop Actions */}
                 <div className="hidden md:flex items-center space-x-4">
                   <Button variant="ghost" size="sm" className="text-foreground/80 hover:text-accent-blue">
-                    <Github className="w-5 h-5" />
+                    <a
+                      href="https://github.com/Fariha31"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="GitHub Profile"
+                    >
+                      <Github className="w-5 h-5" />
+                    </a>
                   </Button>
                   <Button variant="ghost" size="sm" className="text-foreground/80 hover:text-accent-blue">
-                    <Linkedin className="w-5 h-5" />
+                    <a
+                      href="https://www.linkedin.com/in/fariha-liaqat-998054193/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn Profile"
+                    >
+                      <Linkedin className="w-5 h-5" />
+                    </a>
                   </Button>
                   <Button
                     variant="outline"
@@ -120,7 +134,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                 <motion.div
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="md:hidden bg-background/95 backdrop-blur-md border-t border-border py-4"
+                  className="md:hidden fixed inset-x-0 top-16 bottom-0 bg-background/95 backdrop-blur-md border-t border-border py-4 overflow-y-auto z-40"
                 >
                   <div className="flex flex-col space-y-4">
                     {navItems.map((item) => (
@@ -134,10 +148,24 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                     ))}
                     <div className="flex items-center space-x-4 px-4 pt-4 border-t border-border">
                       <Button variant="ghost" size="sm" className="text-foreground/80 hover:text-accent-blue">
-                        <Github className="w-5 h-5" />
+                        <a
+                          href="https://github.com/Fariha31"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="GitHub Profile"
+                        >
+                          <Github className="w-5 h-5" />
+                        </a>
                       </Button>
                       <Button variant="ghost" size="sm" className="text-foreground/80 hover:text-accent-blue">
-                        <Linkedin className="w-5 h-5" />
+                        <a
+                          href="https://www.linkedin.com/in/fariha-liaqat-998054193/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="LinkedIn Profile"
+                        >
+                          <Linkedin className="w-5 h-5" />
+                        </a>
                       </Button>
                       <Button
                         variant="outline"
@@ -195,7 +223,11 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                   <div>
                     <h2 className="text-2xl font-bold text-foreground mb-4">Project Links</h2>
                     <div className="flex items-center space-x-4">
-                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={project.github || "https://github.com/Fariha31"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Button
                           variant="outline"
                           size="sm"

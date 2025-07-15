@@ -67,7 +67,7 @@
   }
   body {
     @apply bg-background text-foreground transition-colors duration-300;
-    cursor: none; /* Re-added to hide default cursor */
+    /* Removed: cursor: none; */
   }
 
   html {

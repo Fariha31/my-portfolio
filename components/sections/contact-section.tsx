@@ -1,6 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
-import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { Mail, Phone, MapPin, Send, Linkedin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function ContactSection() {
@@ -44,7 +44,17 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground">Phone</h3>
-                  <p className="text-foreground/70">+92 3217517360</p>
+                  <p className="text-foreground/70">+92 321-7517360</p>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-4 group">
+                <div className="w-12 h-12 bg-gradient-to-r from-accent-blue to-accent-green rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <Linkedin className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-foreground">LinkedIn</h3>
+                  <p className="text-foreground/70">linkedin.com/in/fariha-liaqat-998054193/</p>
                 </div>
               </div>
 

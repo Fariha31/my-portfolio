@@ -22,8 +22,6 @@ import {
   Rocket,
   Settings,
   TrendingUp,
-  Award,
-  Target,
   Shield,
   Figma,
   GitBranch,
@@ -32,17 +30,28 @@ import {
   Globe2,
   Sparkles,
   Bug,
+  Github,
 } from "lucide-react"
 
 const skills = [
+  { name: "HTML", icon: <Code className="w-8 h-8 text-accent-blue" /> },
+  { name: "CSS", icon: <Palette className="w-8 h-8 text-accent-green" /> },
+  { name: "JavaScript", icon: <Zap className="w-8 h-8 text-accent-orange" /> },
+  { name: "TypeScript", icon: <Type className="w-8 h-8 text-accent-blue" /> },
   { name: "React", icon: <Code className="w-8 h-8 text-accent-blue" /> },
   { name: "Vue.js", icon: <Palette className="w-8 h-8 text-accent-green" /> },
   { name: "Next.js", icon: <Zap className="w-8 h-8 text-accent-orange" /> },
-  { name: "TypeScript", icon: <Type className="w-8 h-8 text-accent-blue" /> },
   { name: "Tailwind CSS", icon: <LayoutDashboard className="w-8 h-8 text-accent-green" /> },
+  { name: "Sass", icon: <Palette className="w-8 h-8 text-accent-orange" /> },
+  { name: "Bootstrap", icon: <LayoutDashboard className="w-8 h-8 text-accent-blue" /> },
+  { name: "Material UI", icon: <LayoutDashboard className="w-8 h-8 text-accent-green" /> },
+  { name: "jQuery", icon: <Code className="w-8 h-8 text-accent-orange" /> },
   { name: "Framer Motion", icon: <Sparkles className="w-8 h-8 text-accent-orange" /> },
   { name: "Git", icon: <GitBranch className="w-8 h-8 text-accent-blue" /> },
+  { name: "GitHub", icon: <Github className="w-8 h-8 text-accent-green" /> },
+  { name: "Bitbucket", icon: <GitBranch className="w-8 h-8 text-accent-orange" /> },
   { name: "Figma", icon: <Figma className="w-8 h-8 text-accent-green" /> },
+  { name: "Adobe XD", icon: <Figma className="w-8 h-8 text-accent-blue" /> }, // Using Figma icon for Adobe XD
   { name: "i18n", icon: <Globe2 className="w-8 h-8 text-accent-orange" /> },
   { name: "Debugging", icon: <Bug className="w-8 h-8 text-accent-blue" /> },
 ]
@@ -89,44 +98,48 @@ const services = [
 const achievements = [
   {
     icon: TrendingUp,
-    title: "Performance Optimization",
-    description: "Reduced page load time by 40% through image optimization and code splitting",
-    metric: "40%",
+    title: "Development Efficiency",
+    description: "Reduced development time by 30% through streamlined processes and effective collaboration.",
+    metric: "30%",
     color: "from-accent-blue to-accent-green",
   },
   {
-    icon: Shield,
-    title: "Cross-browser Compatibility",
-    description: "Resolved 95% of browser compatibility issues across Chrome, Firefox, Safari, and Edge",
-    metric: "95%",
+    icon: Rocket,
+    title: "Performance Optimization",
+    description:
+      "Optimized website performance, achieving a 30% improvement in page load times and 25% increase in site speed.",
+    metric: "30%",
     color: "from-accent-green to-accent-orange",
   },
   {
-    icon: Award,
-    title: "Code Quality Improvement",
-    description: "Improved code maintainability by implementing TypeScript and modern development practices",
-    metric: "60%",
+    icon: Globe,
+    title: "SEO & Organic Growth",
+    description:
+      "Enhanced search engine rankings by applying best SEO practices, leading to a 40% increase in organic traffic.",
+    metric: "40%",
     color: "from-accent-orange to-accent-blue",
   },
   {
-    icon: Users,
-    title: "User Experience Enhancement",
-    description: "Increased user engagement by 35% through responsive design and accessibility improvements",
-    metric: "35%",
+    icon: Code,
+    title: "Code Quality Improvement",
+    description: "Improved code quality by 15% through active participation in 100+ code reviews and bug resolution.",
+    metric: "15%",
     color: "from-accent-blue to-accent-green",
   },
   {
-    icon: Zap,
-    title: "Development Efficiency",
-    description: "Accelerated development process by 50% using component libraries and automated workflows",
-    metric: "50%",
+    icon: Users,
+    title: "User & Client Satisfaction",
+    description:
+      "Boosted user satisfaction by 30% and achieved 80% client satisfaction through enhanced UX and high-quality UI.",
+    metric: "30%",
     color: "from-accent-green to-accent-orange",
   },
   {
-    icon: Target,
-    title: "Bug Resolution",
-    description: "Maintained 99% uptime by proactive bug fixing and comprehensive testing strategies",
-    metric: "99%",
+    icon: Shield,
+    title: "Robust Testing Strategies",
+    description:
+      "Developed and implemented comprehensive unit, integration, and end-to-end testing strategies ensuring high reliability.",
+    metric: "99%", // Retaining 99% uptime from previous context for impact
     color: "from-accent-orange to-accent-blue",
   },
   {
@@ -134,61 +147,68 @@ const achievements = [
     title: "Browser Compatibility & Privacy",
     description:
       "Resolved critical bugs related to Brave browser's cookie blocking, ensuring seamless user experience across privacy-focused browsers.",
-    metric: "100%", // Assuming full resolution
+    metric: "100%",
     color: "from-accent-blue to-accent-green",
   },
   {
-    icon: Code,
-    title: "Codebase Refinement",
+    icon: Settings,
+    title: "Agile Workflow & Milestones",
     description:
-      "Identified and replaced conflicting CSS classes, enhancing cross-browser consistency and reducing rendering issues.",
-    metric: "70%", // Changed from "Improved Stability" to "70%"
+      "Consistently met project milestones and deadlines by actively engaging in Agile development frameworks.",
+    metric: "On-time", // Qualitative metric
     color: "from-accent-green to-accent-orange",
   },
 ]
 
 const experience = [
   {
-    year: "2024 - Present",
-    title: "Senior Frontend Developer",
-    company: "Tech Solutions Inc.",
-    location: "Remote",
+    year: "Oct 2021 - Present",
+    title: "Frontend Engineer",
+    company: "NextBridge Ltd.",
+    location: "Pakistan",
     description:
-      "Leading frontend development for enterprise web applications, mentoring junior developers, and implementing modern development practices.",
+      "As a Frontend Engineer at NextBridge Ltd., I collaborated closely with cross-functional teams including project managers, marketing, and backend developers to align front-end objectives with overall business goals. My role involved implementing robust testing strategies, conducting thorough code reviews, and adhering to best practices to ensure high-quality, clean, and maintainable code. I focused on optimizing web performance and improving search engine rankings by applying best SEO practices. I consistently stayed updated with industry trends and emerging technologies, incorporating innovative solutions to enhance user experience and project outcomes. Operating within an Agile development framework, I actively participated in daily stand-ups, sprint planning sessions, and retrospectives, consistently meeting project milestones and deadlines.",
     achievements: [
-      "Led a team of 4 developers in rebuilding the main product dashboard",
-      "Implemented micro-frontend architecture reducing bundle size by 30%",
-      "Established code review processes and testing standards",
+      "Reduced development time by 30% through effective collaboration and streamlined front-end objectives.",
+      "Developed and implemented robust unit, integration, and end-to-end testing strategies to ensure UI reliability.",
+      "Ensured high-quality, clean, and maintainable code through rigorous code reviews and adherence to best practices.",
+      "Improved search engine rankings by applying best SEO practices in frontend development.",
+      "Incorporated innovative solutions by staying updated with industry trends and emerging technologies, enhancing UX.",
+      "Consistently met project milestones and deadlines by actively engaging in Agile development frameworks.",
     ],
-    tools: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Git"],
+    tools: ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS", "Git", "JIRA"],
   },
   {
-    year: "2022 - 2024",
-    title: "Frontend Developer",
-    company: "Digital Agency Pro",
-    location: "Hybrid",
+    year: "March 2022 - Aug 2024",
+    title: "Frontend Engineer",
+    company: "Vteams - NextBridge Ltd.",
+    location: "Pakistan",
     description:
-      "Developed responsive websites and web applications for various clients, specializing in React and Vue.js implementations.",
+      "At Vteams, I was responsible for implementing responsive, user-friendly interfaces and significantly optimizing website performance. I enhanced search engine rankings by applying best SEO practices and seamlessly integrated front-end solutions with RESTful APIs and various backend services to ensure full functionality. A key part of my role involved actively participating in over 100 code reviews, which allowed me to identify and resolve bugs and inconsistencies, thereby improving overall code quality. I also expanded features and refined existing codebases to boost user satisfaction and improve the overall user experience of websites.",
     achievements: [
-      "Delivered 15+ client projects with 100% on-time completion rate",
-      "Improved client satisfaction scores by 25% through better UX design",
-      "Reduced development time by 40% through component library creation",
+      "Improved page load times by 25% and enhanced overall performance by implementing responsive, user-friendly interfaces.",
+      "Optimized website performance by refining code, optimizing images, and using PageSpeed Insights, resulting in a 30% improvement in page load times and a 25% increase in overall site speed.",
+      "Enhanced search engine rankings by applying best SEO practices, leading to a 40% increase in organic traffic and improved visibility.",
+      "Integrated front-end solutions with RESTful APIs and backend services to ensure seamless functionality.",
+      "Actively participated in 100+ code reviews, improving code quality by 15% through identifying and resolving bugs and inconsistencies.",
+      "Expanded features and refined code, boosting user satisfaction by 30% and improving overall user experience.",
     ],
-    tools: ["Vue.js", "React", "SCSS", "JavaScript", "Figma"],
+    tools: ["React", "Vue.js", "JavaScript", "HTML", "CSS", "REST API", "PageSpeed Insights", "Webpack"],
   },
   {
-    year: "2021 - 2022",
-    title: "Junior Frontend Developer",
-    company: "StartUp Innovations",
-    location: "On-site",
+    year: "Jan 2021 - March 2022",
+    title: "Freelance Frontend Engineer",
+    company: "Shadow Rock Ltd.",
+    location: "Pakistan",
     description:
-      "Started career building user interfaces, learning modern frameworks, and contributing to agile development teams.",
+      "As a Freelance Frontend Engineer at Shadow Rock Ltd., I led the development of the ZenBench internal user portal from scratch using Vue.js. My focus was on creating pixel-perfect, responsive, and visually engaging websites that significantly enhanced user experience and functionality. I ensured high-quality UI and effective implementation through clean and reusable components, which boosted client satisfaction. I also collaborated effectively in an agile manner with cross-functional teams, actively participating in sprint planning sessions.",
     achievements: [
-      "Contributed to 3 major product releases",
-      "Improved page load speeds by 35% through optimization",
-      "Collaborated with design team to implement pixel-perfect UIs",
+      "Led the development of the ZenBench internal user portal from scratch using Vue.js.",
+      "Created pixel-perfect, responsive, and visually engaging websites, enhancing user experience and functionality.",
+      "Boosted client satisfaction to 80% through high-quality UI and effective implementation with clean and reusable components.",
+      "Collaborated in an agile manner with cross-functional teams and actively participated in sprint planning.",
     ],
-    tools: ["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap"],
+    tools: ["Vue.js", "HTML", "CSS", "JavaScript", "Figma", "JIRA", "Slack", "Trello"],
   },
 ]
 

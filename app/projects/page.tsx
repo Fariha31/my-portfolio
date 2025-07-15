@@ -30,7 +30,7 @@ export default function ProjectsPage() {
     }
   }
 
-  const navItems = [] // Removed all navigation items
+  const navItems = ["About", "Services", "Skills", "Projects", "Achievements", "Experience", "Contact"]
 
   return (
     <>
@@ -76,10 +76,24 @@ export default function ProjectsPage() {
                 {/* Desktop Actions */}
                 <div className="hidden md:flex items-center space-x-4">
                   <Button variant="ghost" size="sm" className="text-foreground/80 hover:text-accent-blue">
-                    <Github className="w-5 h-5" />
+                    <a
+                      href="https://github.com/Fariha31"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="GitHub Profile"
+                    >
+                      <Github className="w-5 h-5" />
+                    </a>
                   </Button>
                   <Button variant="ghost" size="sm" className="text-foreground/80 hover:text-accent-blue">
-                    <Linkedin className="w-5 h-5" />
+                    <a
+                      href="https://www.linkedin.com/in/fariha-liaqat-998054193/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn Profile"
+                    >
+                      <Linkedin className="w-5 h-5" />
+                    </a>
                   </Button>
                   <Button
                     variant="outline"
@@ -108,7 +122,7 @@ export default function ProjectsPage() {
                 <motion.div
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="md:hidden bg-background/95 backdrop-blur-md border-t border-border py-4"
+                  className="md:hidden fixed inset-x-0 top-16 bottom-0 bg-background/95 backdrop-blur-md border-t border-border py-4 overflow-y-auto z-40"
                 >
                   <div className="flex flex-col space-y-4">
                     {navItems.map((item) => (
@@ -122,10 +136,24 @@ export default function ProjectsPage() {
                     ))}
                     <div className="flex items-center space-x-4 px-4 pt-4 border-t border-border">
                       <Button variant="ghost" size="sm" className="text-foreground/80 hover:text-accent-blue">
-                        <Github className="w-5 h-5" />
+                        <a
+                          href="https://github.com/Fariha31"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="GitHub Profile"
+                        >
+                          <Github className="w-5 h-5" />
+                        </a>
                       </Button>
                       <Button variant="ghost" size="sm" className="text-foreground/80 hover:text-accent-blue">
-                        <Linkedin className="w-5 h-5" />
+                        <a
+                          href="https://www.linkedin.com/in/fariha-liaqat-998054193/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="LinkedIn Profile"
+                        >
+                          <Linkedin className="w-5 h-5" />
+                        </a>
                       </Button>
                       <Button
                         variant="outline"
@@ -153,71 +181,77 @@ export default function ProjectsPage() {
               </motion.div>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {projects.map((project, index) => (
-                  <motion.div
-                    key={project.slug}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                    className="group"
-                  >
-                    <div className="bg-card border border-border rounded-2xl p-6 hover:border-accent-blue/50 transition-all duration-300 h-full flex flex-col">
-                      <div className="relative rounded-lg overflow-hidden mb-6">
-                        <img
-                          src={project.image || "/placeholder.svg"}
-                          alt={project.title}
-                          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
+                {projects
+                  .filter((project) => project.featured) // This line filters for featured projects
+                  .map((project, index) => (
+                    <motion.div
+                      key={project.slug}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                      viewport={{ once: true }}
+                      className="group"
+                    >
+                      <div className="bg-card border border-border rounded-2xl p-6 hover:border-accent-blue/50 transition-all duration-300 h-full flex flex-col">
+                        <div className="relative rounded-lg overflow-hidden mb-6">
+                          <img
+                            src={project.image || "/placeholder.svg"}
+                            alt={project.title}
+                            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
+                        </div>
+                        <h3 className="text-2xl font-bold text-foreground mb-2">{project.title}</h3>
+                        <p className="text-foreground/70 text-base leading-relaxed flex-grow mb-4">
+                          {project.description}
+                        </p>
+                        <div className="flex flex-wrap gap-2 mb-6">
+                          {project.tech.map((tech) => (
+                            <span
+                              key={tech}
+                              className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm border border-border"
+                            >
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                        <div className="flex items-center space-x-4 mt-auto">
+                          <Link href={`/projects/${project.slug}`} passHref>
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              className="border-accent-blue text-accent-blue hover:bg-accent-blue hover:text-white bg-transparent rounded-lg"
+                            >
+                              View Details
+                            </Button>
+                          </Link>
+                          <a
+                            href={project.github || "https://github.com/Fariha31"}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              className="text-foreground/80 hover:text-accent-blue"
+                              aria-label={`GitHub repository for ${project.title}`}
+                            >
+                              <Github className="w-5 h-5" />
+                            </Button>
+                          </a>
+                          <a href={project.live} target="_blank" rel="noopener noreferrer">
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              className="text-foreground/80 hover:text-accent-blue"
+                              aria-label={`Live demo for ${project.title}`}
+                            >
+                              <ExternalLink className="w-5 h-5" />
+                            </Button>
+                          </a>
+                        </div>
                       </div>
-                      <h3 className="text-2xl font-bold text-foreground mb-2">{project.title}</h3>
-                      <p className="text-foreground/70 text-base leading-relaxed flex-grow mb-4">
-                        {project.description}
-                      </p>
-                      <div className="flex flex-wrap gap-2 mb-6">
-                        {project.tech.map((tech) => (
-                          <span
-                            key={tech}
-                            className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm border border-border"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                      <div className="flex items-center space-x-4 mt-auto">
-                        <Link href={`/projects/${project.slug}`} passHref>
-                          <Button
-                            variant="outline"
-                            size="sm"
-                            className="border-accent-blue text-accent-blue hover:bg-accent-blue hover:text-white bg-transparent rounded-lg"
-                          >
-                            View Details
-                          </Button>
-                        </Link>
-                        <a href={project.github} target="_blank" rel="noopener noreferrer">
-                          <Button
-                            variant="ghost"
-                            size="sm"
-                            className="text-foreground/80 hover:text-accent-blue"
-                            aria-label={`GitHub repository for ${project.title}`}
-                          >
-                            <Github className="w-5 h-5" />
-                          </Button>
-                        </a>
-                        <a href={project.live} target="_blank" rel="noopener noreferrer">
-                          <Button
-                            variant="ghost"
-                            size="sm"
-                            className="text-foreground/80 hover:text-accent-blue"
-                            aria-label={`Live demo for ${project.title}`}
-                          >
-                            <ExternalLink className="w-5 h-5" />
-                          </Button>
-                        </a>
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
+                    </motion.div>
+                  ))}
               </div>
             </div>
           </section>
