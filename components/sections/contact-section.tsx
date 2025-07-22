@@ -78,7 +78,7 @@ export function ContactSection() {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          {/* <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <div className="bg-background border border-border rounded-2xl p-8">
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -125,7 +125,7 @@ export function ContactSection() {
                 </Button>
               </form>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>

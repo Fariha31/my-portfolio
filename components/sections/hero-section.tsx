@@ -26,7 +26,7 @@ const HeroSection = () => {
     }
   }
 
-  const navItems = ["About", "Services", "Skills", "Projects", "Achievements", "Experience", "Contact"]
+  const navItems = [ "Services", "Skills", "Projects", "Achievements", "Experience"]
 
   const typewriterWords = [
     { text: "Frontend", className: "text-foreground/80" },
@@ -240,9 +240,7 @@ const HeroSection = () => {
                 transition={{ delay: 0.6 }}
                 className="text-lg text-foreground/70 max-w-lg mx-auto lg:mx-0 leading-relaxed"
               >
-                Experienced Frontend Engineer with 3+ years of expertise, dedicated to building high-quality, responsive
-                web applications and collaborating effectively with cross-functional teams to deliver impactful digital
-                solutions.
+                Frontend Developer with 4 years of experience building fast, user-friendly interfaces and delivering robust solutions through close collaboration with designers, backend engineers, and stakeholders.
               </motion.p>
 
               <motion.div

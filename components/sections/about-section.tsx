@@ -10,12 +10,12 @@ export function AboutSection() {
       description:
         "Building maintainable and scalable solutions with a focus on code quality and best practices, ensuring long-term stability.",
     },
-    {
-      icon: Palette,
-      title: "Intuitive User Experiences",
-      description:
-        "Designing and implementing visually appealing interfaces that prioritize user delight and accessibility across devices.",
-    },
+    // {
+    //   icon: Palette,
+    //   title: "Intuitive User Experiences",
+    //   description:
+    //     "Designing and implementing visually appealing interfaces that prioritize user delight and accessibility across devices.",
+    // },
     {
       icon: Zap,
       title: "Optimized Performance",
@@ -39,15 +39,14 @@ export function AboutSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">A Passion for Frontend Excellence</h2>
-          <p className="text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed">
-            My journey as a Frontend Engineer is driven by a deep passion for transforming complex ideas into elegant,
-            user-centric web applications. With every project, I am committed to delivering not just functional code,
-            but exceptional digital experiences that are intuitive, high-performing, and built to last.
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">About Me</h2>
+          <p className="text-xl text-foreground/70 max-w-5xl mx-auto leading-relaxed">
+          My journey as a Frontend Engineer is fueled by a passion for turning complex ideas into clean, user-focused digital experiences. I specialize in building scalable, high-performance web applications that prioritize usability and maintainability. 
+          <br/>Beyond writing efficient code, I thrive in cross-functional teams and aim to create meaningful products that deliver long-term value.  From code quality to performance, here’s what drives my work
           </p>
         </motion.div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {highlights.map((item, index) => (
             <motion.div
               key={item.title}

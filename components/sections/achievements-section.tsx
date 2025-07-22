@@ -36,11 +36,11 @@ export function AchievementsSection({
                   >
                     <achievement.icon className="w-6 h-6 text-white" />
                   </div>
-                  <div
+                  {/* <div
                     className={`text-3xl font-bold bg-gradient-to-r ${achievement.color} bg-clip-text text-transparent`}
                   >
                     {achievement.metric}
-                  </div>
+                  </div> */}
                 </div>
 
                 <h3 className="text-xl font-semibold text-foreground mb-4">{achievement.title}</h3>
