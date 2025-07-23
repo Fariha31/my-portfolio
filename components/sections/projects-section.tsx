@@ -1,9 +1,9 @@
-"use client"
-import { motion } from "framer-motion"
-import { ExternalLink, Github, ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { projects as allProjects } from "@/data/projects" // Import all projects
+"use client";
+import { motion } from "framer-motion";
+import { ExternalLink, Github, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { projects as allProjects } from "@/data/projects"; // Import all projects
 
 export function ProjectsSection() {
   // Filter projects to show only the specified four on the main page
@@ -13,8 +13,8 @@ export function ProjectsSection() {
       "takeapeeq-landing-page",
       "digitalkonnect-marketplace",
       "senseinsights-analytics",
-    ].includes(project.slug),
-  )
+    ].includes(project.slug)
+  );
 
   return (
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
@@ -25,9 +25,12 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">Featured Projects</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
+            Featured Projects
+          </h2>
           <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
-            A showcase of my recent work and the technologies I've used to bring ideas to life
+            A showcase of my work and the technologies I've used to bring ideas
+            to life
           </p>
         </motion.div>
 
@@ -35,7 +38,7 @@ export function ProjectsSection() {
           {featuredProjects.map(
             (
               project,
-              index, // Use featuredProjects here
+              index // Use featuredProjects here
             ) => (
               <motion.div
                 key={project.title}
@@ -43,17 +46,29 @@ export function ProjectsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2 }}
                 viewport={{ once: true }}
-                className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:grid-flow-col-dense" : ""}`}
+                className={`grid lg:grid-cols-2 gap-12 items-center ${
+                  index % 2 === 1 ? "lg:grid-flow-col-dense" : ""
+                }`}
               >
-                <div className={`space-y-6 ${index % 2 === 1 ? "lg:col-start-2" : ""}`}>
+                <div
+                  className={`space-y-6 ${
+                    index % 2 === 1 ? "lg:col-start-2" : ""
+                  }`}
+                >
                   {project.featured && (
                     <div className="inline-block px-3 py-1 bg-accent-blue/10 border border-accent-blue/20 rounded-full">
-                      <span className="text-accent-blue text-sm font-medium">Featured Project</span>
+                      <span className="text-accent-blue text-sm font-medium">
+                        Featured Project
+                      </span>
                     </div>
                   )}
 
-                  <h3 className="text-3xl font-bold text-foreground">{project.title}</h3>
-                  <p className="text-foreground/70 text-lg leading-relaxed">{project.description}</p>
+                  <h3 className="text-3xl font-bold text-foreground">
+                    {project.title}
+                  </h3>
+                  <p className="text-foreground/70 text-lg leading-relaxed">
+                    {project.description}
+                  </p>
 
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech) => (
@@ -67,14 +82,20 @@ export function ProjectsSection() {
                   </div>
 
                   <div className="flex items-center space-x-4">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="border-accent-blue text-accent-blue hover:bg-accent-blue hover:text-white bg-transparent rounded-lg"
+                    <a
+                      href={project.github || "https://github.com/Fariha31"}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
-                    </Button>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="border-accent-blue text-accent-blue hover:bg-accent-blue hover:text-white bg-transparent rounded-lg"
+                      >
+                        <Github className="w-4 h-4 mr-2" />
+                        Code
+                      </Button>
+                    </a>
                     <Button
                       size="sm"
                       className="bg-gradient-to-r from-accent-blue to-accent-green hover:from-accent-green hover:to-accent-orange text-white border-0 rounded-lg"
@@ -85,7 +106,11 @@ export function ProjectsSection() {
                   </div>
                 </div>
 
-                <div className={`relative group ${index % 2 === 1 ? "lg:col-start-1" : ""}`}>
+                <div
+                  className={`relative group ${
+                    index % 2 === 1 ? "lg:col-start-1" : ""
+                  }`}
+                >
                   <div className="absolute inset-0 bg-gradient-to-r from-accent-blue/20 to-accent-green/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
                   <div className="relative bg-card border border-border rounded-2xl overflow-hidden group-hover:border-accent-blue/50 transition-all duration-300">
                     <img
@@ -96,7 +121,7 @@ export function ProjectsSection() {
                   </div>
                 </div>
               </motion.div>
-            ),
+            )
           )}
         </div>
 
@@ -119,5 +144,5 @@ export function ProjectsSection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

@@ -16,7 +16,7 @@ export function ContactSection() {
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">Let's Work Together</h2>
           <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
             Ready to bring your ideas to life? I'm always excited to work on new projects and collaborate with amazing
-            people.
+            people. Below is my contact details
           </p>
         </motion.div>
 
@@ -25,7 +25,7 @@ export function ContactSection() {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="space-y-8"
+            className="space-y-6"
           >
             <div className="space-y-6">
               <div className="flex items-center space-x-4 group">
@@ -34,7 +34,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground">Email</h3>
-                  <p className="text-foreground/70">farihaliaqat31@gmail.com</p>
+                  <a href="mailto:farihaliaqat31@gamil.com" className="text-foreground/70">farihaliaqat31@gmail.com</a>
                 </div>
               </div>
 
@@ -48,13 +48,31 @@ export function ContactSection() {
                 </div>
               </div>
 
+               
+
+               
+            </div>
+
+          
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="space-y-6"
+          >
+            <div className="space-y-6">
+              
+
+               
+
               <div className="flex items-center space-x-4 group">
                 <div className="w-12 h-12 bg-gradient-to-r from-accent-blue to-accent-green rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <Linkedin className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground">LinkedIn</h3>
-                  <p className="text-foreground/70">linkedin.com/in/fariha-liaqat-998054193/</p>
+                  <a href="linkedin.com/in/fariha-liaqat-998054193" target="_blank" className="text-foreground/70">linkedin.com/in/fariha-liaqat-998054193/</a>
                 </div>
               </div>
 
@@ -69,6 +87,10 @@ export function ContactSection() {
               </div>
             </div>
 
+          
+          </motion.div>
+
+          {/* <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <div className="pt-8">
               <h3 className="text-xl font-semibold text-foreground mb-4">Let's Connect</h3>
               <p className="text-foreground/70 leading-relaxed">
@@ -76,9 +98,6 @@ export function ContactSection() {
                 frontend development. Feel free to reach out!
               </p>
             </div>
-          </motion.div>
-
-          {/* <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <div className="bg-background border border-border rounded-2xl p-8">
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">

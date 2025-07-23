@@ -246,20 +246,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                   <div>
                     <h2 className="text-2xl font-bold text-foreground mb-4">Project Links</h2>
                     <div className="flex items-center space-x-4">
-                      <a
-                        href={project.github || "https://github.com/Fariha31"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="border-accent-blue text-accent-blue hover:bg-accent-blue hover:text-white bg-transparent rounded-lg"
-                        >
-                          <Github className="w-4 h-4 mr-2" />
-                          Code
-                        </Button>
-                      </a>
+                       
                       <a href={project.live} target="_blank" rel="noopener noreferrer">
                         <Button
                           size="sm"
@@ -274,7 +261,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                 </div>
 
                 <div className="mb-8">
-                  <h2 className="text-2xl font-bold text-foreground mb-4">About This Project</h2>
+                  <h2 className="text-2xl font-bold text-foreground mb-4">My Roles and Responsibilties</h2>
                   <p className="text-foreground/70 leading-relaxed">{project.longDescription}</p>
                 </div>
               </motion.div>

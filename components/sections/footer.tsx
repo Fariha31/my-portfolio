@@ -10,7 +10,7 @@ export function Footer() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="pt-8 text-center"
+          className=" text-center"
         >
           <p className="text-foreground/70 flex items-center justify-center space-x-2">
             <span>Made with</span>

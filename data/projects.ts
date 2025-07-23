@@ -5,12 +5,20 @@ export const projects = [
     description:
       "A dynamic e-commerce platform for premium electronics like AirPods, Apple Watch, and MacBooks, featuring highlighted deals and a seamless shopping experience.",
     image: "/images/rocketdrop.png",
-    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Node.js"],
-    github: "#", // Placeholder, update if you have a public repo
+    tech: [
+      "Vue.js",
+      "Vuetify",
+      "Boostrap",
+      "SCSS",
+      "Axios",
+      "GitLab",
+      "E-commerce",
+    ],
+    github: "https://github.com/Fariha31/Rocketdrop",
     live: "https://rocketdrop.com",
     featured: true,
     longDescription:
-      "Led complete website development from scratch, managing all aspects of front-end development from initial design to deployment using Vue.js and Sass. Provided ongoing support and maintenance, addressing issues and implementing improvements based on user feedback and evolving needs. Optimized images and other media assets, and implemented lazy loading, resulting in a 20% reduction in load time and improved website performance. Utilized feedback from user testing and analytics to make data-driven UI improvements, significantly enhancing usability and achieving a 15% increase in user satisfaction scores.",
+      "Led complete website development from scratch, managing all aspects of front-end development from initial design to deployment using Vue.js and Sass. Provided ongoing support and maintenance, addressing issues and implementing improvements based on feedback and evolving needs. Optimized images and other media assets, and implemented lazy loading, resulting in a 20% reduction in load time and improved website performance. Utilized feedback from user testing and analytics to make data-driven UI improvements, significantly enhancing usability and achieving a 15% increase in user satisfaction scores.",
   },
   {
     slug: "takeapeeq-gps-tracker", // Updated slug for clarity
@@ -18,21 +26,28 @@ export const projects = [
     description:
       "A comprehensive platform for a patent-pending GPS tracker, showcasing key features, global coverage, and user-friendly dashboard.", // Updated description
     image: "/images/takeapeeq.png", // Updated image path
-    tech: ["React", "Next.js", "Mapping APIs", "Data Visualization", "UI/UX Design"], // Updated tech
-    github: "#", // Placeholder, update if you have a public repo
+    tech: ["React", "Hooks", "MapLibre GL", "Data Visualization", "Dashboard","GPS Tracking System"], // Updated tech
+    github: "https://github.com/Fariha31/PEEQ", // Placeholder, update if you have a public repo
     live: "https://takeapeeq.com",
     featured: true, // Marked as featured due to detailed content
     longDescription:
-      "Developed and maintained high-quality, user-centric interfaces for the Takeapeeq platform, ensuring a visually appealing and intuitive user experience. Restyled major modules, including the dashboard, using React.js with advanced Material UI styling. Conducted thorough testing and debugging to identify and resolve front-end issues, maintaining high standards of quality and usability. Resolved Brave browser cookies compatibility issues by implementing solutions to address cookie policies, ensuring proper functionality across all major browsers. Optimized website performance (code, images, PageSpeed Insights), resulting in a 30% improvement in load times and a 25% increase in overall site speed. Customized maps and location features using the MapLibre library to create an easy-to-use mapping experience.",
+      "Developed and maintained high-quality, user-centric interfaces for the Takeapeeq platform.Restyled major modules, including the dashboard, using React.js with advanced Material UI styling.Conducted thorough testing and debugging to identify and resolve front- end issues, maintaining high standards of quality and usability.Resolved Brave browser cookies compatibility issues by implementing solutions to address cookie policies, ensuring proper functionality across all major browsers.Optimized website performance(code, images, PageSpeed Insights), resulting in a 30 % improvement in load times and a 25 % increase in overall site speed.Customized maps and location features using the MapLibre library to create an easy-to- use mapping experience.",
   },
   {
     slug: "senseinsights-analytics",
     title: "Sense Insights - Analytics Dashboard",
-    description:
-      "An advanced, multilingual analytics dashboard providing deep insights and data visualizations, designed for a global audience with full Right-to-Left (RTL) support.",
+    description:"A multilingual analytics dashboard offering advanced data visualizations and deep insights, primarily tailored for an Arabic-speaking audience with full Right-to-Left (RTL) support. It also supports English for broader accessibility.",
     image: "/images/senseinsights.png",
-    tech: ["React", "Next.js", "D3.js", "i18n", "REST API", "Data Visualization"],
-    github: "#", // Placeholder, update if you have a public repo
+    tech: [
+      "React",
+      "Next.js",
+      "HighCHarts",
+      "i18n",
+      "REST API",
+      "Data Visualization",
+      "Dark/Light Theme",
+    ],
+    github: "https://gitlab.vteamslabs.com/senseinsight/sense-insight-frontend", // Placeholder, update if you have a public repo
     live: "https://senseinsights.sa",
     featured: true,
     longDescription:
@@ -44,8 +59,8 @@ export const projects = [
     description:
       "A leading UK community marketplace platform connecting next-generation entrepreneurs and businesses, featuring robust search, detailed listings, and a user-friendly interface.",
     image: "/images/digitalkonnect.png",
-    tech: ["Next.js", "Tailwind CSS", "PostgreSQL", "Authentication", "Search Functionality"],
-    github: "#", // Placeholder, update if you have a public repo
+    tech: ["HTML", "Tailwind CSS", "Authentication", "Search Functionality","Blogs and Articles"],
+    github: "https://gitlab.vteamslabs.com/vteams/digitalkonnect", // Placeholder, update if you have a public repo
     live: "https://digitalkonnect.co.uk",
     featured: true, // Marked as featured
     longDescription:
@@ -57,12 +72,12 @@ export const projects = [
     description:
       "A comprehensive platform for outdoor enthusiasts and hunters, offering mapping, listing, and blog features with a focus on mobile accessibility.",
     image: "/images/ihunt.png",
-    tech: ["React Native (implied)", "React", "Next.js", "Mapbox GL JS", "Blog Integration"],
+    tech: ["React", "Blog Integration", "Admin Panel"],
     github: "#", // Placeholder, update if you have a public repo
     live: "https://ihunt.com",
     featured: true,
     longDescription:
-      "Developed and optimized IHUNT, a React-based application with two main user types: Landowner and Hunter. As a Front End React Engineer, I enhanced the existing codebase and built new modules, responding to continuous client feedback for improved functionality. Integrated multimedia elements such as videos and interactive maps, enriching content and increasing user engagement by 30%. Eliminated dead code which saved us about 20% the size of every page bundle.",
+      "Developed and optimized IHUNT, a React-based application with two main user types: Landowner and Hunter. As a Front End React Engineer, I enhanced the existing codebase and built new modules, responding to continuous client feedback for improved functionality. Integrated multimedia elements such as videos and interactive maps, enriching content. Eliminated dead code which saved us about 20% the size of every page bundle.",
   },
   {
     slug: "teenycoders-educational-platform",
@@ -70,7 +85,13 @@ export const projects = [
     description:
       "A global online school coding platform for kids from Grades 1-12, offering a revolutionary way to educate and excel in coding, mathematical, and problem-solving skills.",
     image: "/images/teenycoders.png",
-    tech: ["Next.js", "React", "Tailwind CSS", "Education Tech", "Online Learning"],
+    tech: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Education Tech",
+      "Online Learning",
+    ],
     github: "#", // Placeholder, update if you have a public repo
     live: "https://teenycoders.com/",
     featured: true,
@@ -83,50 +104,29 @@ export const projects = [
     description:
       "Developed the interactive dashboard for ZenBench, an enterprise tool for Zendesk, focusing on data visualization and user experience using Vue.js.",
     image: "/images/zenbench.png",
-    tech: ["Vue.js", "Data Visualization", "UI/UX Design", "API Integration", "Zendesk API"],
+    tech: [
+      "Vue.js",
+      "Data Visualization",
+      "UI/UX Design",
+      "API Integration",
+      "Zendesk API",
+    ],
     github: "#", // Placeholder, update if you have a public repo
     live: "https://www.zenbench.io/",
     featured: true,
     longDescription:
       "Led the restyling of a data management platform, enhancing tools such as the Data Wizard for data manipulation and the Sandbox Seeder for data replication. Increased mobile usability by 40% through responsive UI adjustments. Ensured uniform experience across devices, raising client satisfaction by 80%.",
   },
-  {
-    slug: "multilingual-travel-platform",
-    title: "Multilingual Travel Platform",
-    description:
-      "A travel booking platform supporting multiple languages with dynamic content, currency conversion, and real-time availability.",
-    image: "/placeholder.svg?height=300&width=500",
-    tech: ["Vue.js", "Nuxt.js", "i18n", "SCSS", "REST API", "Stripe"],
-    github: "#",
-    live: "#",
-    featured: false,
-    longDescription:
-      "Developed a sophisticated travel booking platform designed to cater to a global audience. The platform supports multiple different languages, with dynamic content loading and real-time currency conversion. Built with Vue.js and Nuxt.js, it leverages i18n for internationalization, SCSS for styling, and integrates with various REST APIs for flight and hotel availability. Stripe is used for secure payment processing. The focus was on creating a seamless and localized user experience.",
-  },
-  {
-    slug: "corporate-website",
-    title: "Corporate Website",
-    description:
-      "Modern corporate website with smooth animations, contact forms, CMS integration, and SEO optimization.",
-    image: "/placeholder.svg?height=300&width=500",
-    tech: ["Next.js", "Framer Motion", "Tailwind CSS", "Strapi", "GraphQL"],
-    github: "#",
-    live: "#",
-    featured: false,
-    longDescription:
-      "Designed and developed a modern corporate website with a strong emphasis on user experience and performance. The site incorporates smooth animations using Framer Motion, a clean design with Tailwind CSS, and a flexible content management system (CMS) integration via Strapi and GraphQL. Extensive SEO optimization was performed to ensure high visibility in search results. The website includes various interactive elements, contact forms, and a responsive layout for all devices.",
-  },
+
   {
     slug: "real-time-chat-application",
-    title: "Real-time Chat Application",
-    description:
-      "A real-time messaging application with file sharing, emoji support, user presence indicators, and group chat functionality.",
+    title: "TalkSee Chat App",
+    description:"A real-time multilingual messaging app designed to bridge communication gaps and enhance user interaction. It features a GAN-generated avatar created from the user's profile picture, which dynamically translates incoming messages into the user's preferred language, ensuring a more personalized and seamless communication experience.",
     image: "/placeholder.svg?height=300&width=500",
-    tech: ["React", "Socket.io", "Node.js", "MongoDB", "Redis"],
-    github: "#",
+    tech: ["React", "Socket.io", "Node.js", "MongoDB", "Axios","Generative Adversarial Network"],
+    github: "https://github.com/Fariha31/TalkSee_ChatApp",
     live: "#",
-    featured: false,
-    longDescription:
-      "Built a real-time chat application from scratch, providing instant messaging capabilities. Features include one-on-one and group chats, file sharing, emoji support, and real-time user presence indicators. The application is powered by React on the frontend, Node.js with Socket.io for real-time communication, MongoDB for message storage, and Redis for caching and session management. The focus was on low-latency communication and a rich user experience.",
+    featured: true,
+    longDescription:" I led the frontend development using React.js as part of the MERN stack. I was responsible for designing intuitive UI components, implementing multilingual support, and integrating the avatar translation feature into the user interface."
   },
-]
+];
