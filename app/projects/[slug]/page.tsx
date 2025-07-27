@@ -79,7 +79,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                       onClick={() => scrollToSection(item.toLowerCase())}
                       className="text-foreground/80 hover:text-accent-blue transition-colors duration-300 relative group"
                     >
-                      {item}
+                      <a href="/">{item}</a>
                       <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-accent-blue to-accent-green group-hover:w-full transition-all duration-300" />
                     </motion.button>
                   ))}
@@ -107,6 +107,8 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                       <Linkedin className="w-5 h-5" />
                     </a>
                   </Button>
+                   <a href="https://drive.google.com/file/d/12-bdpnFZiyW_ZY3Q8NnhN9Z7qI5G8_xt/view?usp=sharing" target="_blanck">
+                
                   <Button
                     variant="outline"
                     size="sm"
@@ -115,6 +117,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                     <Download className="w-4 h-4 mr-2" />
                     Resume
                   </Button>
+                  </a>
                   <ThemeToggle />
                 </div>
 
@@ -155,7 +158,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                         onClick={() => scrollToSection(item.toLowerCase())}
                         className="text-foreground/80 hover:text-accent-blue transition-colors duration-300 text-left px-4 py-2"
                       >
-                        {item}
+                         <a href="/">{item}</a>
                       </button>
                     ))}
                     <div className="flex items-center space-x-4 px-4 pt-4 border-t border-border">
@@ -189,6 +192,8 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                           <Linkedin className="w-5 h-5" />
                         </a>
                       </Button>
+                       <a href="https://drive.google.com/file/d/12-bdpnFZiyW_ZY3Q8NnhN9Z7qI5G8_xt/view?usp=sharing" target="_blanck">
+                
                       <Button
                         variant="outline"
                         size="sm"
@@ -198,6 +203,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                         <Download className="w-4 h-4 mr-2" />
                         Resume
                       </Button>
+                      </a>
                       <ThemeToggle />
                     </div>
                   </div>
@@ -244,7 +250,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                     </div>
                   </div>
                   <div>
-                    <h2 className="text-2xl font-bold text-foreground mb-4">Project Links</h2>
+                    <h2 className="text-2xl font-bold text-foreground mb-4">Project Link</h2>
                     <div className="flex items-center space-x-4">
                        
                       <a href={project.live} target="_blank" rel="noopener noreferrer">

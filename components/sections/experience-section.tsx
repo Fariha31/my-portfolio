@@ -73,14 +73,14 @@ export function ExperienceSection({
 
                 <p className="text-foreground/70 mb-6 leading-relaxed">{exp.description}</p>
 
-                <div className="space-y-3 mb-6">
+                {/* <div className="space-y-3 mb-6">
                   {exp.achievements.map((achievement, achievementIndex) => (
                     <div key={achievementIndex} className="flex items-start space-x-3">
                       <div className="w-1.5 h-1.5 bg-accent-green rounded-full mt-2 flex-shrink-0" />
                       <span className="text-foreground/80 text-sm">{achievement}</span>
                     </div>
                   ))}
-                </div>
+                </div> */}
 
                 <div className="flex flex-wrap gap-2">
                   {exp.tools.map((tool) => (

@@ -164,11 +164,11 @@ const achievements = [
 const experience = [
   {
     year: "Oct 2021 - Present",
-    title: "Frontend Engineer",
+    title: "Senior Frontend Engineer",
     company: "NextBridge Ltd.",
     location: "Pakistan",
     description:
-      "As a Frontend Engineer at NextBridge Ltd., I collaborated closely with cross-functional teams including project managers, marketing, and backend developers to align front-end objectives with overall business goals. My role involved implementing robust testing strategies, conducting thorough code reviews, and adhering to best practices to ensure high-quality, clean, and maintainable code. I focused on optimizing web performance and improving search engine rankings by applying best SEO practices. I consistently stayed updated with industry trends and emerging technologies, incorporating innovative solutions to enhance user experience and project outcomes. Operating within an Agile development framework, I actively participated in daily stand-ups, sprint planning sessions, and retrospectives, consistently meeting project milestones and deadlines.",
+      "As a Frontend Engineer at NextBridge Ltd., I collaborated closely with cross-functional teams including project managers, QA engineers, and backend developers to align front-end objectives with overall business goals. My role involved implementing robust testing strategies, conducting thorough code reviews, and adhering to best practices to ensure high-quality, clean, and maintainable code. I focused on optimizing web performance and improving search engine rankings by applying best SEO practices. I consistently stayed updated with industry trends and emerging technologies, incorporating innovative solutions to enhance user experience and project outcomes. Operating within an Agile development framework, I actively participated in daily stand-ups, sprint planning sessions, and retrospectives, consistently meeting project milestones and deadlines.",
     achievements: [
       "Reduced development time by 30% through effective collaboration and streamlined front-end objectives.",
       "Developed and implemented robust unit, integration, and end-to-end testing strategies to ensure UI reliability.",
@@ -177,7 +177,7 @@ const experience = [
       "Incorporated innovative solutions by staying updated with industry trends and emerging technologies, enhancing UX.",
       "Consistently met project milestones and deadlines by actively engaging in Agile development frameworks.",
     ],
-    tools: ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS", "Git", "JIRA"],
+    tools: ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS", "Git", "JIRA", "i18next", "Dark Mode", "Light Mode"],
   },
   {
     year: "March 2022 - Aug 2024",
@@ -194,7 +194,7 @@ const experience = [
       "Actively participated in 100+ code reviews, improving code quality by 15% through identifying and resolving bugs and inconsistencies.",
       "Expanded features and refined code, boosting user satisfaction by 30% and improving overall user experience.",
     ],
-    tools: ["React", "Vue.js", "JavaScript", "HTML", "CSS", "REST API", "PageSpeed Insights", "Webpack"],
+    tools: ["React", "Vue.js", "JavaScript", "HTML", "CSS", "REST API", "PageSpeed Insights", "MapLibre"],
   },
   {
     year: "Jan 2021 - March 2022",
@@ -209,7 +209,7 @@ const experience = [
       "Boosted client satisfaction to 80% through high-quality UI and effective implementation with clean and reusable components.",
       "Collaborated in an agile manner with cross-functional teams and actively participated in sprint planning.",
     ],
-    tools: ["Vue.js", "HTML", "CSS", "JavaScript", "Figma", "JIRA", "Slack", "Trello"],
+    tools: ["Vue.js", "HTML", "CSS", "JavaScript", "Figma", "JIRA", "Slack", "Bootstrap"],
   },
 ]
 

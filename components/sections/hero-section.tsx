@@ -94,6 +94,8 @@ const HeroSection = () => {
                   <Linkedin className="w-5 h-5" />
                 </a>
               </Button>
+              <a href="https://drive.google.com/file/d/12-bdpnFZiyW_ZY3Q8NnhN9Z7qI5G8_xt/view?usp=sharing" target="_blanck">
+                
               <Button
                 variant="outline"
                 size="sm"
@@ -102,6 +104,7 @@ const HeroSection = () => {
                 <Download className="w-4 h-4 mr-2" />
                 Resume
               </Button>
+              </a>
               <ThemeToggle />
             </div>
 
@@ -176,6 +179,8 @@ const HeroSection = () => {
                       <Linkedin className="w-5 h-5" />
                     </a>
                   </Button>
+                   <a href="https://drive.google.com/file/d/12-bdpnFZiyW_ZY3Q8NnhN9Z7qI5G8_xt/view?usp=sharing" target="_blanck">
+                
                   <Button
                     variant="outline"
                     size="sm"
@@ -185,6 +190,7 @@ const HeroSection = () => {
                     <Download className="w-4 h-4 mr-2" />
                     Resume
                   </Button>
+                  </a>
                   <ThemeToggle />
                 </div>
               </div>

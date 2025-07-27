@@ -25,19 +25,19 @@ const services = [
     icon: Globe,
     title: "Internationalization",
     description: "Developing multilingual applications with proper localization support",
-    features: ["Multi-language Support", "RTL Support", "Cultural Adaptation", "Dynamic Content"],
+    features: ["Multi-language Support", "RTL Support","Dynamic Content"],
   },
   {
     icon: Rocket,
     title: "Performance Optimization",
     description: "Optimizing applications for speed, SEO, and better user experience",
-    features: ["Core Web Vitals", "SEO Optimization", "Bundle Optimization", "Lazy Loading"],
+    features: ["Core Web Vitals", "SEO Optimization", "Lazy Loading"],
   },
   {
     icon: Settings,
     title: "Development Workflow",
     description: "Implementing modern development practices and CI/CD workflows",
-    features: ["Git Workflows", "Testing", "Code Reviews", "Deployment Automation"],
+    features: ["Git Workflows", "Testing", "Code Reviews", "Deployment"],
   },
 ]
 

@@ -82,20 +82,6 @@ export function ProjectsSection() {
                   </div>
 
                   <div className="flex items-center space-x-4">
-                    <a
-                      href={project.github || "https://github.com/Fariha31"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="border-accent-blue text-accent-blue hover:bg-accent-blue hover:text-white bg-transparent rounded-lg"
-                      >
-                        <Github className="w-4 h-4 mr-2" />
-                        Code
-                      </Button>
-                    </a>
                     <Button
                       size="sm"
                       className="bg-gradient-to-r from-accent-blue to-accent-green hover:from-accent-green hover:to-accent-orange text-white border-0 rounded-lg"

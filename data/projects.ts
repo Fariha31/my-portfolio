@@ -41,7 +41,7 @@ export const projects = [
     tech: [
       "React",
       "Next.js",
-      "HighCHarts",
+      "HighCharts",
       "i18n",
       "REST API",
       "Data Visualization",
