@@ -24,7 +24,7 @@ export const projects = [
     slug: "takeapeeq-gps-tracker", // Updated slug for clarity
     title: "Takeapeeq - GPS Tracker Platform", // Updated title
     description:
-      "A comprehensive platform for a patent-pending GPS tracker, showcasing key features, global coverage, and user-friendly dashboard.", // Updated description
+      "Takeapeeq is a GPS tracking platform that provides real-time location monitoring, geofencing alerts, and tamper detection for assets across 180+ countries. The system combines a web dashboard and hardware device (POM) to offer precise tracking, multi-network support, and long battery life for both personal and enterprise use.", // Updated description
     image: "/images/takeapeeq.png", // Updated image path
     tech: ["React", "Hooks", "MapLibre GL", "Data Visualization", "Dashboard","GPS Tracking System"], // Updated tech
     github: "https://github.com/Fariha31/PEEQ", // Placeholder, update if you have a public repo
@@ -36,7 +36,7 @@ export const projects = [
   {
     slug: "senseinsights-analytics",
     title: "Sense Insights - Analytics Dashboard",
-    description:"A multilingual analytics dashboard offering advanced data visualizations and deep insights, primarily tailored for an Arabic-speaking audience with full Right-to-Left (RTL) support. It also supports English for broader accessibility.",
+    description:"Sense Insights is an AI-powered web analytics platform that unifies social media analytics, competitor tracking, SEO insights, and website performance monitoring. It offers customizable dashboards, real-time data visualizations, and multilingual support (including Arabic RTL) to help businesses make data-driven decisions and optimize their digital presence.",
     image: "/images/senseinsights.png",
     tech: [
       "React",
@@ -122,7 +122,7 @@ export const projects = [
     slug: "real-time-chat-application",
     title: "TalkSee Chat App",
     description:"A real-time multilingual messaging app designed to bridge communication gaps and enhance user interaction. It features a GAN-generated avatar created from the user's profile picture, which dynamically translates incoming messages into the user's preferred language, ensuring a more personalized and seamless communication experience.",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/images/talkSee.png",
     tech: ["React", "Socket.io", "Node.js", "MongoDB", "Axios","Generative Adversarial Network"],
     github: "https://github.com/Fariha31/TalkSee_ChatApp",
     live: "#",
